@@ -40,12 +40,11 @@
 		<div class="calculator-display" id="display"></div>
 
 
-<button class="calculator-button" onclick="deleteLastEntry()">del</button>
-
+		<button class="calculator-button" onclick="deleteLastEntry()">del</button>
+		
 		<button class="calculator-button" onclick="clearDisplay()">C</button>
 		<button class="calculator-button" onclick="addToDisplay('/')">/</button>
 		<button class="calculator-button" onclick="addToDisplay('*')">*</button>
-
     		<button class="calculator-button" onclick="calculate()">=</button>
 
     
@@ -57,11 +56,10 @@
 		<button class="calculator-button" onclick="addToDisplay('4')">4</button>
 		<button class="calculator-button" onclick="addToDisplay('5')">5</button>
 		<button class="calculator-button" onclick="addToDisplay('6')">6</button>
-		
 		<button class="calculator-button" onclick="addToDisplay('+')">+</button>
+		
 		<button class="calculator-button" onclick="addToDisplay('1')">1</button>
-
-    <button class="calculator-button" onclick="addToDisplay('2')">2</button>
+		<button class="calculator-button" onclick="addToDisplay('2')">2</button>
 		<button class="calculator-button" onclick="addToDisplay('3')">3</button>
 		<button class="calculator-button" onclick="addToDisplay('0')">0</button>
 	</div>
@@ -90,14 +88,15 @@
 				alert('Invalid expression!');
 			}
 		}
-    
-    function deleteLastEntry() {
-    if (expression.length > 0) {
-        // Eğer ifade uzunluğu 0'dan büyükse, son karakteri sil
-        expression = expression.slice(0, -1);
-        display.innerHTML = expression;
-    }
-}
+
+		function deleteLastEntry() {
+    			if (expression.length > 0) {
+      				// Eğer ifade uzunluğu 0'dan büyükse, son karakteri sil
+       				expression = expression.slice(0, -1);
+	     			display.innerHTML = expression;
+   			}
+		}
+    	
 	</script>
 </body>
 </html>
